@@ -17,7 +17,7 @@ void integrate(double* poly, double* out, int len) {
     for (int i = 0; i < len+1; i++) {
         out[i] += poly[i-1] / (double)i;
     }
-    out[0] = 0.0;
+    out[0] = 0.0; // constant term
 }
 
 int main(int argc, char** argv) {
