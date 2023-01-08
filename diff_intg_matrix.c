@@ -9,15 +9,15 @@
 
 void differentiate(double* poly, double* out, int len) {
     for (int i = 0; i < len-1; i++) {
-        out[i] += poly[i+1] * (i+1);
+        out[i] = poly[i+1] * (i+1);
     }
 }
 
 void integrate(double* poly, double* out, int len) {
     for (int i = 0; i < len+1; i++) {
-        out[i] += poly[i-1] / (double)i;
+        out[i] = poly[i-1] / (double)i;
     }
-    out[0] = 0.0; // constant term
+    out[0] = 0.0; // constant term (left as zero, can be anything)
 }
 
 int main(int argc, char** argv) {
