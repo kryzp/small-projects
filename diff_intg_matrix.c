@@ -15,7 +15,7 @@ void differentiate(double* poly, double* out, int len) {
 
 void integrate(double* poly, double* out, int len) {
     for (int i = 0; i < len+1; i++) {
-        out[i] += poly[i-1] * (1.0 / (double)(i));
+        out[i] += poly[i-1] / (double)i;
     }
     out[0] = 0.0;
 }
