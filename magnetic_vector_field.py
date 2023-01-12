@@ -1,7 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plot
 
-N = 1
 falloff = 5
 flip = [1, -1]
 positions = [(0, 5), (0, -5)]
