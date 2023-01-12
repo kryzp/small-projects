@@ -11,7 +11,7 @@ def d(coord):
 def n(coord):
 	return (-coord[1], coord[0])
 
-def W(x, y):
+def B(x, y):
 	graph = (x, y)
 	final = (0, 0)
 	for i in range(len(positions)):
@@ -23,7 +23,7 @@ SP = 25
 DS = 10
 
 x, y = np.meshgrid(np.linspace(-DS, DS, SP), np.linspace(-DS, DS, SP))
-u, v = W(x, y)
+u, v = B(x, y)
 
 plot.quiver(x, y, u, v)
 # plot.grid()
